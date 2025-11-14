@@ -49,5 +49,5 @@ The **Cafe Management System** is a web application designed to streamline and e
 
 ### **Clone the Repository**
 ```bash
-git clone https://github.com/Bhavish1715/CafeManagementSystem_DBMS_Project.git
+git clone https://github.com/samarthm-cr7/dbms_project_AM259_AM243.git
 cd CafeManagementSystem
