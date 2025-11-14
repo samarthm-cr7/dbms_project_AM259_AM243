@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Top Dashboard with Login Options */
+
+.top-dashboard {
+  display: flex;
+  justify-content: space-between; /* Align items on both ends */
+  padding: 10px;
+  background-color: #333;
+}
+
+.cafename {
+  color: #ff8c00;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.dashboard-buttons {
+  display: flex;
+}
+
+.dashboard-button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 4px 10px;
+  margin: 0 10px;
+  margin-top: 5px;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dashboard-button:hover {
+  background-color: #ffa500;
+}
+
+/* Main Content with Cafe Image and About Section */
+.main-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cafe-image {
+  flex: 3;
+}
+
+.cafe-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-cafe {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.about-cafe h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.about-cafe p {
+  font-size: 1rem;
+}
+
+/* Sliding Menu Items */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.sliding-menu {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #fff;
+  position: relative;
+}
+
+.sliding-menu-inner {
+  display: flex;
+  animation: slide 20s linear infinite;
+}
+
+.menu-item {
+  width: 180px;
+  height: 130px;
+  margin-right: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  transform: scale(1.1);
+}
+
+/* Bottom Dashboard with Address and Contact Info */
+.bottom-dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #333;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
